@@ -1,6 +1,6 @@
 {
   "name": "morpheus-image-resize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Canvas image resize for browser",
   "keywords": [
     "javascript",
