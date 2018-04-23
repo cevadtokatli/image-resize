@@ -1,0 +1,51 @@
+{
+  "name": "morpheus-image-resize",
+  "version": "1.0.0",
+  "description": "Canvas image resize for browser",
+  "keywords": [
+    "javascript",
+    "canvas",
+    "image",
+    "resize"
+  ],
+  "author": {
+    "name": "Cevad Tokatli",
+    "email": "cevadtokatli@hotmail.com",
+    "url": "http://cevadtokatli.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cevadtokatli/morpheus-image-resize"
+  },
+  "files": [
+    "src",
+    "dist",
+    "rollup.config.js"
+  ],
+  "license": "MIT",
+  "main": "dist/morpheus.min.js",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c && uglifyjs dist/morpheus.js -o dist/morpheus.min.js --comments /Morpheus/",
+    "dev:demo": "webpack --mode development --progress --watch",
+    "build:demo": "webpack --mode production",
+    "build:all": "npm run build && npm run build:demo"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "copy-style-file": "^1.0.2",
+    "copy-webpack-plugin": "^4.5.1",
+    "es6-promise": "^4.2.4",
+    "rollup": "^0.58.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "9.1.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "uglify-js": "^3.3.21",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
+}
