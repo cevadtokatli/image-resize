@@ -43,6 +43,23 @@ Morpheus.resize('image.jpg', {
 </html>
 ```
 
+## Demo
+This repository contains a simple demo project that allows you to give it a try and see the results.
+
+If you want to run the demo, clone the repository and go to the project directory.
+
+```
+$ git clone https://github.com/cevadtokatli/morpheus-image-resize.git
+$ cd morpheus-image-resize/demo/dist
+```
+
+Open the demo file in your browser.
+
+```
+$ open index.html
+```
+
+
 ## Methods
 All methods of Morpheus are static and return a `Promise` to be chained.
 
