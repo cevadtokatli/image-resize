@@ -14,7 +14,7 @@ const createImageElement = (src: string): Promise<HTMLImageElement> => {
 }
 
 /**
- * Converts DOM element, image file or string (url or base64 cde) to an image element and returns a Promise that resolves it.
+ * Converts DOM element, image file or string (url or base64 code) to an image element and returns a Promise that resolves it.
  */
 const getImageElement = (input: HTMLImageElement | HTMLCanvasElement | File | string): Promise<{ element: HTMLImageElement, extension: string }> => {
   return new Promise(async (resolve, reject) => {
@@ -91,7 +91,7 @@ const getImageType = (canvas: HTMLCanvasElement): string => `image/${getImageExt
 
 /**
  * Resizes the given image and returns a Promise that resolves a canvas element which can be converted to a file, image, blob or base64 code 
- * by using convert methods(toImage, toFile, toBlob, toBase64).
+ * by using convert methods (toImage, toFile, toBlob, toBase64).
  */
 export const resize = (input: HTMLImageElement | HTMLCanvasElement | File | string, options: ResizeOptions = {}): Promise<HTMLCanvasElement> => {
   return new Promise(async (resolve, reject) => {
