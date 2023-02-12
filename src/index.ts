@@ -53,7 +53,7 @@ const getImageElement = (input: HTMLImageElement | HTMLCanvasElement | File | st
                 extension: getImageExtension((input as File).name),
               })
             })
-            reader.addEventListener('error', () => reject)
+            reader.addEventListener('error', reject)
             reader.readAsDataURL(input as File)
 
             break
