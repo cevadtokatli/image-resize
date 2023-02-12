@@ -57,8 +57,6 @@ img.addEventListener('load', () => {
     resize(img)
 })
 img.src = 'image.jpg'
-
-resize(img)
 ```
 
 A Canvas Element:
@@ -69,7 +67,7 @@ const img = document.querySelector('img')
 const canvas = document.createElement('canvas')
 canvas.getContext('2d').drawImage(img, 0, 0, img.width, img.height);
 
-resize(canvas);
+resize(canvas)
 ```
 
 A File:
